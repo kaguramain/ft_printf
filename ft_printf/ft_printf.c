@@ -6,7 +6,7 @@
 /*   By: vpalacio <vpalacio@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 15:29:59 by vpalacio          #+#    #+#             */
-/*   Updated: 2023/03/27 15:28:09 by vpalacio         ###   ########.fr       */
+/*   Updated: 2023/03/27 19:44:00 by vpalacio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	ft_printf(const char *str, ...)
 	{
 		if (str[i] == '%')
 		{
-			sum += ft_check(args, str[i]);
+			sum += ft_check(args, str[++i]);
 			i++;
 		}
 		else

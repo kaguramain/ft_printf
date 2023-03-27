@@ -2,9 +2,9 @@ NAME		= libftprintf.a
 
 SRCS		= ft_printf.c \
 			  ft_printhexa.c \
-			  ft_printptr.c \
-			  ft_unsignedprt.c\
-			  ft_utils.c \
+			  ft_printpntr.c \
+			  ft_printunsigned.c \
+			  ft_printpct.c \
 			  
 				
 OBJS		= $(SRCS:%.c=%.o)

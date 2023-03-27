@@ -6,7 +6,7 @@
 /*   By: vpalacio <vpalacio@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 16:27:17 by vpalacio          #+#    #+#             */
-/*   Updated: 2023/03/27 15:07:15 by vpalacio         ###   ########.fr       */
+/*   Updated: 2023/03/27 19:47:48 by vpalacio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ static void	ft_puthexa(unsigned	int n, char pattern)
 		if (pattern == 'X')
 			ft_putchar_fd((n - 10 + 'A'), 1);
 	}
+	else
+		ft_putchar_fd((n + '0'), 1);
 }
 
 int	ft_printhexa(unsigned int n, char pattern)

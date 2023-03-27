@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_utils.c                                         :+:      :+:    :+:   */
+/*   ft_printpct.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vpalacio <vpalacio@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 21:29:10 by vpalacio          #+#    #+#             */
-/*   Updated: 2023/03/24 16:24:19 by vpalacio         ###   ########.fr       */
+/*   Updated: 2023/03/27 18:54:49 by vpalacio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_printnbr(int n)
 	char	*number;
 
 	number = ft_itoa(n);
-	i = ft_prinstr(number);
+	i = ft_printstr(number);
 	free(number);
 	return (i);
 }
